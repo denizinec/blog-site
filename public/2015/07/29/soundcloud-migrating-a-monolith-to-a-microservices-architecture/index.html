@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> SoundCloud: migrating a monolith to a microservices architecture | joonas.fi</title>
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:url" content="http://localhost:1313/2015/07/29/soundcloud-migrating-a-monolith-to-a-microservices-architecture/">
+  <meta property="og:url" content="http://localhost:1313/blog/2015/07/29/soundcloud-migrating-a-monolith-to-a-microservices-architecture/">
   <meta property="og:site_name" content="joonas.fi">
   <meta property="og:title" content="SoundCloud: migrating a monolith to a microservices architecture">
   <meta property="og:description" content="Awesome read! A three-part series:
@@ -33,9 +33,9 @@ Bonus read: Prometheus: monitoring at SoundCloud">
   
   
   
-  <link rel="stylesheet" href="/css/style-white.css">
+  <link rel="stylesheet" href="/blog/css/style-white.css">
   
-   <link rel="stylesheet" href="/css/custom.css"> 
+   <link rel="stylesheet" href="/blog/css/custom.css"> 
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -61,13 +61,13 @@ Bonus read: Prometheus: monitoring at SoundCloud">
     <span id="nav">
       <ul>
          
-        <li><a href="/">Home</a></li>
+        <li><a href="/blog/">Home</a></li>
          
-        <li><a href="/today-i-learned/">Today I Learned</a></li>
+        <li><a href="/blog/today-i-learned/">Today I Learned</a></li>
          
-        <li><a href="/about/">About</a></li>
+        <li><a href="/blog/about/">About</a></li>
          
-        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/blog/contact/">Contact</a></li>
         
       </ul>
     </span>
@@ -76,14 +76,14 @@ Bonus read: Prometheus: monitoring at SoundCloud">
       <ul>
         
         <li>
-          <a class="icon" href=" http://localhost:1313/2015/07/26/cyberchallenge-from-finnish-defence-forces/">
+          <a class="icon" href=" http://localhost:1313/blog/2015/07/26/cyberchallenge-from-finnish-defence-forces/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="http://localhost:1313/2015/08/06/poor-tax-communication-from-digitalocean/">
+          <a class="icon" href="http://localhost:1313/blog/2015/08/06/poor-tax-communication-from-digitalocean/">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
@@ -114,57 +114,57 @@ Bonus read: Prometheus: monitoring at SoundCloud">
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&text=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&text=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&is_video=false&description=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&is_video=false&description=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture&body=Check out this article: http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f">
+    <a class="icon" href="mailto:?subject=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture&body=Check out this article: http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&name=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture&description=Awesome%20read%21%20A%20three-part%20series%3a%0apt1.%20Dealing%20with%20the%20monolith%0apt2.%20Breaking%20the%20monolith%0apt3.%20Microservices%20in%20Scala%20and%20Finagle%0aBonus%20read%3a%20Prometheus%3a%20monitoring%20at%20SoundCloud">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&name=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture&description=Awesome%20read%21%20A%20three-part%20series%3a%0apt1.%20Dealing%20with%20the%20monolith%0apt2.%20Breaking%20the%20monolith%0apt3.%20Microservices%20in%20Scala%20and%20Finagle%0aBonus%20read%3a%20Prometheus%3a%20monitoring%20at%20SoundCloud">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&t=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&t=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -251,7 +251,7 @@ Bonus read: Prometheus: monitoring at SoundCloud">
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 
-var disqus_identifier = '\/2015\/07\/29\/soundcloud-migrating-a-monolith-to-a-microservices-architecture';
+var disqus_identifier = '\/blog\/2015\/07\/29\/soundcloud-migrating-a-monolith-to-a-microservices-architecture';
 
 (function() {
    if (window.location.hostname.indexOf('.dev.fn61.net') != -1) {
@@ -278,13 +278,13 @@ var disqus_identifier = '\/2015\/07\/29\/soundcloud-migrating-a-monolith-to-a-mi
     <div id="nav-footer" style="display: none">
       <ul>
          
-          <li><a href="/">Home</a></li>
+          <li><a href="/blog/">Home</a></li>
          
-          <li><a href="/today-i-learned/">Today I Learned</a></li>
+          <li><a href="/blog/today-i-learned/">Today I Learned</a></li>
          
-          <li><a href="/about/">About</a></li>
+          <li><a href="/blog/about/">About</a></li>
          
-          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/blog/contact/">Contact</a></li>
         
       </ul>
     </div>
@@ -302,57 +302,57 @@ var disqus_identifier = '\/2015\/07\/29\/soundcloud-migrating-a-monolith-to-a-mi
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&text=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&text=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&is_video=false&description=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&is_video=false&description=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture&body=Check out this article: http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f">
+    <a class="icon" href="mailto:?subject=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture&body=Check out this article: http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&title=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&name=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture&description=Awesome%20read%21%20A%20three-part%20series%3a%0apt1.%20Dealing%20with%20the%20monolith%0apt2.%20Breaking%20the%20monolith%0apt3.%20Microservices%20in%20Scala%20and%20Finagle%0aBonus%20read%3a%20Prometheus%3a%20monitoring%20at%20SoundCloud">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&name=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture&description=Awesome%20read%21%20A%20three-part%20series%3a%0apt1.%20Dealing%20with%20the%20monolith%0apt2.%20Breaking%20the%20monolith%0apt3.%20Microservices%20in%20Scala%20and%20Finagle%0aBonus%20read%3a%20Prometheus%3a%20monitoring%20at%20SoundCloud">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a1313%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&t=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f2015%2f07%2f29%2fsoundcloud-migrating-a-monolith-to-a-microservices-architecture%2f&t=SoundCloud%3a%20migrating%20a%20monolith%20to%20a%20microservices%20architecture">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -384,13 +384,13 @@ var disqus_identifier = '\/2015\/07\/29\/soundcloud-migrating-a-monolith-to-a-mi
     <nav>
       <ul>
          
-        <li><a href="/">Home</a></li>
+        <li><a href="/blog/">Home</a></li>
          
-        <li><a href="/today-i-learned/">Today I Learned</a></li>
+        <li><a href="/blog/today-i-learned/">Today I Learned</a></li>
          
-        <li><a href="/about/">About</a></li>
+        <li><a href="/blog/about/">About</a></li>
          
-        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/blog/contact/">Contact</a></li>
         
       </ul>
     </nav>

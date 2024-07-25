@@ -1,9 +1,11 @@
-baseURL = "https://joonas.fi/"
+baseURL = "https://denizinec.com/blog"
 languageCode = "en-us"
 title = "joonas.fi"
 theme = ["cactus","hugo-video"]
 DisqusShortname = "joonas-fi"
 paginate = 25
+publishDir = "public/blog"
+
 
 [permalinks]
 posts = "/:year/:month/:title/"
