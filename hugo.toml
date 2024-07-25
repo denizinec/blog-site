@@ -1,7 +1,7 @@
 baseURL = "https://joonas.fi/"
 languageCode = "en-us"
 title = "joonas.fi"
-theme = "cactus"
+theme = ["cactus","hugo-video"]
 DisqusShortname = "joonas-fi"
 paginate = 25
 
