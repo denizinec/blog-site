@@ -1,9 +1,0 @@
-syntax: glob
-.sass-cache/
-.vagrant/
-
-# build artefacts
-build/
-joonas.fi-blog.tar.gz
-
-
