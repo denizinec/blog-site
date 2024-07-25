@@ -1,0 +1,67 @@
+baseURL = "https://denizinec.com/blog"
+languageCode = "en-us"
+title = "joonas.fi"
+theme = ["cactus"]
+DisqusShortname = "joonas-fi"
+paginate = 25
+publishDir = "public/blog"
+
+
+[permalinks]
+posts = "/:year/:month/:title/"
+
+[params]
+author = "Joonas"
+gravatar = "pompo500@xs.fi"
+description = "Let’s get to work ᕕ( ᐛ )ᕗ"
+rss = true
+tagsOverview = true
+showallpostsonhomepage = true
+css = [ "css/custom.css" ]
+
+  [[params.social]]
+  name = "twitter"
+  link = "https://twitter.com/joonas_fi"
+
+  [[params.social]]
+  name = "github"
+  link = "https://github.com/function61/"
+
+  [[params.social]]
+  name = "stack-overflow"
+  link = "https://stackoverflow.com/users/2176740/joonas-fi"
+
+  [[params.social]]
+  name = "linkedin"
+  link = "https://www.linkedin.com/in/joonas-fi/"
+
+  [[params.social]]
+  name = "rss"
+  link = "/feed.xml"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Today I Learned"
+url = "/today-i-learned/"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 3
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 4
+
+[markup.highlight]
+style = "rainbow_dash"
+
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
