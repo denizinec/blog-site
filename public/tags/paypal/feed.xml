@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paypal on joonas.fi</title>
+    <link>http://localhost:1313/tags/paypal/</link>
+    <description>Recent content in Paypal on joonas.fi</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Feb 2022 16:34:47 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/paypal/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paypal: click does nothing</title>
+      <link>http://localhost:1313/complaint-corner/2022/paypal-click-does-nothing/</link>
+      <pubDate>Sat, 12 Feb 2022 16:34:47 +0000</pubDate>
+      <guid>http://localhost:1313/complaint-corner/2022/paypal-click-does-nothing/</guid>
+      <description>All systems have glitches, but with PayPal it is systemic.&#xA;It is astonishing how often something doesn&amp;rsquo;t work in PayPal&amp;rsquo;s system:</description>
+    </item>
+  </channel>
+</rss>
