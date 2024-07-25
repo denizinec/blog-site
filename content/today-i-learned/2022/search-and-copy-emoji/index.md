@@ -53,6 +53,3 @@ emoji="$(echo -n "$emojiAndDescription" | cut -d ' ' -f 1)"
 echo -n "$emoji" | xclip -selection clipboard
 ```
 
-Here's a video demo:
-
-{{< video src="demo" >}}

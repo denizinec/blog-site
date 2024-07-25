@@ -35,7 +35,6 @@ Demonstration
 
 Here's me entering `123.4560`:
 
-{{< video src="usage" >}}
 
 
 Code

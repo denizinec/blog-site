@@ -33,7 +33,6 @@ change both at the same time.
 
 Since you're reading this with the new visuals, here's how the old visuals looked like:
 
-{{< video src="old-theme" >}}
 
 
 ### Template selection process

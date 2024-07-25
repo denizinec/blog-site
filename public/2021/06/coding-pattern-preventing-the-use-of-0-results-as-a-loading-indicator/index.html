@@ -236,10 +236,6 @@ a few seconds more and I saw my files.</p>
 and thus the lie is visible for a long time.</p>
 <h2 id="this-problem-is-everywhere">This problem is everywhere</h2>
 <p>Google Drive:</p>
-<video controls preload="auto" width="100%"  class="html-video">
-    <source src="/2021/06/coding-pattern-preventing-the-use-of-0-results-as-a-loading-indicator/google-drive.mp4" type="video/mp4" }}>
-  <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="/2021/06/coding-pattern-preventing-the-use-of-0-results-as-a-loading-indicator/google-drive.mp4">download it</a> and watch it with your favorite video player!</p>
-</video>
 <p>I could go <strong>on an on</strong> where I find this.</p>
 <p>Microsoft has had <em>decades</em> to improve Windows, but still when you go to count directory&rsquo;s files and
 subdirs (from right click -&gt; properties) it reports &ldquo;0 files&rdquo; for a while if the drive is slow to
@@ -286,15 +282,7 @@ states separately:</p>
 </span></span><span style="display:flex;"><span>	<span style="color:#2c5dcd;font-weight:bold">return</span> &lt;<span style="color:#2c5dcd;font-weight:bold">ReplicationStatusesView</span> <span style="color:#2c5dcd;font-style:italic">replicationStatuses</span><span style="color:#2c5dcd">=</span>{replicationStatuses} /&gt;;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>And the UI looks like this when the server is slow to respond:</p>
-<video controls preload="auto" width="100%"  class="html-video">
-    <source src="/2021/06/coding-pattern-preventing-the-use-of-0-results-as-a-loading-indicator/solution-success.mp4" type="video/mp4" }}>
-  <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="/2021/06/coding-pattern-preventing-the-use-of-0-results-as-a-loading-indicator/solution-success.mp4">download it</a> and watch it with your favorite video player!</p>
-</video>
 <p>And when the same request fails:</p>
-<video controls preload="auto" width="100%"  class="html-video">
-    <source src="/2021/06/coding-pattern-preventing-the-use-of-0-results-as-a-loading-indicator/solution-failure.mp4" type="video/mp4" }}>
-  <p>Your browser doesn't support embedded videos, but don't worry, you can <a href="/2021/06/coding-pattern-preventing-the-use-of-0-results-as-a-loading-indicator/solution-failure.mp4">download it</a> and watch it with your favorite video player!</p>
-</video>
 <h2 id="the-code">The code</h2>
 <p>For the curious, the code for <code>Result&lt;T&gt;</code> wrapper is
 <a href="https://github.com/function61/f61ui/blob/c28d1a42b1992f6c41f2e13e9244ec49772f228e/component/result.tsx">here</a>.</p>

@@ -29,7 +29,6 @@ This problem is everywhere
 
 Google Drive:
 
-{{< video src="google-drive" >}}
 
 I could go **on an on** where I find this.
 
@@ -102,11 +101,9 @@ private renderReplicationStatusesView() {
 
 And the UI looks like this when the server is slow to respond:
 
-{{< video src="solution-success.mp4" >}}
 
 And when the same request fails:
 
-{{< video src="solution-failure.mp4" >}}
 
 
 The code

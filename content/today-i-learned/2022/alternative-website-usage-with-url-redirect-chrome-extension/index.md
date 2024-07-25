@@ -93,7 +93,6 @@ https://libreddit.spike.codes/*
 
 This is how seamless it can be:
 
-{{< video src="demo" >}}
 
 
 Concrete recommendation
