@@ -4,7 +4,7 @@ title = "joonas.fi"
 theme = ["cactus"]
 DisqusShortname = "joonas-fi"
 paginate = 25
-publishDir = "public/blog"
+# publishDir = "public/blog"
 
 
 [permalinks]
