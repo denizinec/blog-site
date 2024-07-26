@@ -6,17 +6,6 @@ DisqusShortname = "joonas-fi"
 paginate = 25
 # publishDir = "public/blog"
 
-[outputs]
-  home = ["HTML", "RSS"]
-
-[mediaTypes]
-  [mediaTypes."application/rss+xml"]
-    suffixes = ["xml"]
-
-[outputFormats.RSS]
-  mediaType = "application/rss+xml"
-  baseName = "index"
-
 
 [permalinks]
 posts = "/:year/:month/:title/"
