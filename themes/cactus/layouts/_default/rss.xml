@@ -1,0 +1,24 @@
+{{- $pctx := . }}
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>{{ .Site.Title | xmlEscape }}</title>
+    <link>{{ .Site.BaseURL | relURL | xmlEscape }}</link>
+    <description>{{ .Site.Params.description | default .Site.Title | xmlEscape }}</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="{{ .Site.BaseURL | relURL }}/index.xml" rel="self" type="application/rss+xml"/>
+    {{ range .Pages }}
+    <item>
+      <title>{{ .Title | xmlEscape }}</title>
+      <link>{{ .Permalink | xmlEscape }}</link>
+      <guid>{{ .Permalink | xmlEscape }}</guid>
+      <description>{{ .Summary | xmlEscape }}</description>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+    </item>
+    {{ end }}
+  </channel>
+</rss>
