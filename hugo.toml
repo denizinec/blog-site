@@ -64,4 +64,4 @@ style = "rainbow_dash"
 
 [outputFormats.RSS]
 mediatype = "application/rss"
-baseName = "index"
+baseName = "feed"
