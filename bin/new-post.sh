@@ -1,6 +1,5 @@
 #!/bin/sh
 
-set -eu
 
 id="$1"
 
