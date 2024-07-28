@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=62645&amp;path=blog/livereload" data-no-instant defer></script>
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=63129&amp;path=blog/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Tracking down inefficiencies in parallelization | joonas.fi</title>
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:url" content="http://localhost:62645/blog/2020/04/tracking-down-inefficiencies-in-parallelization/">
+  <meta property="og:url" content="http://localhost:63129/blog/2020/04/tracking-down-inefficiencies-in-parallelization/">
   <meta property="og:site_name" content="joonas.fi">
   <meta property="og:title" content="Tracking down inefficiencies in parallelization">
   <meta property="og:description" content="I was improving performance for Varasto and there was one unit of work that was easily parallelizable (= run on all CPU cores) to gain some speed. I’ll share my learnings in graphical tooling to help measure/debug how efficiently your parallelization works.
@@ -70,14 +70,14 @@ go tool trace The graphs I&rsquo;m about to show, Go actually has internal tooli
       <ul>
         
         <li>
-          <a class="icon" href=" http://localhost:62645/blog/2020/04/04/preventing-outdated-docs-links-in-software-projects/">
+          <a class="icon" href=" http://localhost:63129/blog/2020/04/04/preventing-outdated-docs-links-in-software-projects/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="http://localhost:62645/blog/2020/08/restore-accidentally-deleted/replaced-binary-of-a-running-process/">
+          <a class="icon" href="http://localhost:63129/blog/2020/08/restore-accidentally-deleted/replaced-binary-of-a-running-process/">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
@@ -108,57 +108,57 @@ go tool trace The graphs I&rsquo;m about to show, Go actually has internal tooli
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&text=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&text=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&is_video=false&description=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&is_video=false&description=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Tracking%20down%20inefficiencies%20in%20parallelization&body=Check out this article: http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f">
+    <a class="icon" href="mailto:?subject=Tracking%20down%20inefficiencies%20in%20parallelization&body=Check out this article: http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&name=Tracking%20down%20inefficiencies%20in%20parallelization&description=I%20was%20improving%20performance%20for%20Varasto%20and%20there%20was%20one%20unit%20of%20work%20that%20was%20easily%20parallelizable%20%28%3d%20run%20on%20all%20CPU%20cores%29%20to%20gain%20some%20speed.%20I%26rsquo%3bll%20share%20my%20learnings%20in%20graphical%20tooling%20to%20help%20measure%2fdebug%20how%20efficiently%20your%20parallelization%20works.%0ago%20tool%20trace%20The%20graphs%20I%26rsquo%3bm%20about%20to%20show%2c%20Go%20actually%20has%20internal%20tooling%20for%20-%20go%20tool%20trace%2c%20to%20generate%20%28and%20even%20show%29%20comparable%20traces%20without%20instrumenting%20your%20code.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&name=Tracking%20down%20inefficiencies%20in%20parallelization&description=I%20was%20improving%20performance%20for%20Varasto%20and%20there%20was%20one%20unit%20of%20work%20that%20was%20easily%20parallelizable%20%28%3d%20run%20on%20all%20CPU%20cores%29%20to%20gain%20some%20speed.%20I%26rsquo%3bll%20share%20my%20learnings%20in%20graphical%20tooling%20to%20help%20measure%2fdebug%20how%20efficiently%20your%20parallelization%20works.%0ago%20tool%20trace%20The%20graphs%20I%26rsquo%3bm%20about%20to%20show%2c%20Go%20actually%20has%20internal%20tooling%20for%20-%20go%20tool%20trace%2c%20to%20generate%20%28and%20even%20show%29%20comparable%20traces%20without%20instrumenting%20your%20code.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&t=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&t=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -340,57 +340,57 @@ var disqus_identifier = '\/blog\/2020\/04\/tracking-down-inefficiencies-in-paral
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&text=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&text=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&is_video=false&description=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&is_video=false&description=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Tracking%20down%20inefficiencies%20in%20parallelization&body=Check out this article: http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f">
+    <a class="icon" href="mailto:?subject=Tracking%20down%20inefficiencies%20in%20parallelization&body=Check out this article: http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&title=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&name=Tracking%20down%20inefficiencies%20in%20parallelization&description=I%20was%20improving%20performance%20for%20Varasto%20and%20there%20was%20one%20unit%20of%20work%20that%20was%20easily%20parallelizable%20%28%3d%20run%20on%20all%20CPU%20cores%29%20to%20gain%20some%20speed.%20I%26rsquo%3bll%20share%20my%20learnings%20in%20graphical%20tooling%20to%20help%20measure%2fdebug%20how%20efficiently%20your%20parallelization%20works.%0ago%20tool%20trace%20The%20graphs%20I%26rsquo%3bm%20about%20to%20show%2c%20Go%20actually%20has%20internal%20tooling%20for%20-%20go%20tool%20trace%2c%20to%20generate%20%28and%20even%20show%29%20comparable%20traces%20without%20instrumenting%20your%20code.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&name=Tracking%20down%20inefficiencies%20in%20parallelization&description=I%20was%20improving%20performance%20for%20Varasto%20and%20there%20was%20one%20unit%20of%20work%20that%20was%20easily%20parallelizable%20%28%3d%20run%20on%20all%20CPU%20cores%29%20to%20gain%20some%20speed.%20I%26rsquo%3bll%20share%20my%20learnings%20in%20graphical%20tooling%20to%20help%20measure%2fdebug%20how%20efficiently%20your%20parallelization%20works.%0ago%20tool%20trace%20The%20graphs%20I%26rsquo%3bm%20about%20to%20show%2c%20Go%20actually%20has%20internal%20tooling%20for%20-%20go%20tool%20trace%2c%20to%20generate%20%28and%20even%20show%29%20comparable%20traces%20without%20instrumenting%20your%20code.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a62645%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&t=Tracking%20down%20inefficiencies%20in%20parallelization">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a63129%2fblog%2f2020%2f04%2ftracking-down-inefficiencies-in-parallelization%2f&t=Tracking%20down%20inefficiencies%20in%20parallelization">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
