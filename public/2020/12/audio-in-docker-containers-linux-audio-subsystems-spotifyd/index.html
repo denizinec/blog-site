@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=61622&amp;path=blog/livereload" data-no-instant defer></script>
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=61769&amp;path=blog/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Audio in Docker containers, Linux audio subsystems, Spotifyd | joonas.fi</title>
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:url" content="http://localhost:61622/blog/2020/12/audio-in-docker-containers-linux-audio-subsystems-spotifyd/">
+  <meta property="og:url" content="http://localhost:61769/blog/2020/12/audio-in-docker-containers-linux-audio-subsystems-spotifyd/">
   <meta property="og:site_name" content="joonas.fi">
   <meta property="og:title" content="Audio in Docker containers, Linux audio subsystems, Spotifyd">
   <meta property="og:description" content="I wanted to get Spotifyd working in a Docker container. Turns out, audio and containers can be tricky. In this post I’ll share what I learned on Linux audio subsystems and considerations on container audio.
@@ -73,14 +73,14 @@ What is spotifyd? Spotifyd is a headless Spotify that can be remote controlled (
       <ul>
         
         <li>
-          <a class="icon" href=" http://localhost:61622/blog/2020/09/quantified-self-overview-quick-links/">
+          <a class="icon" href=" http://localhost:61769/blog/2020/09/quantified-self-overview-quick-links/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="http://localhost:61622/blog/2020/12/attach-a-keyboard-to-a-docker-container/">
+          <a class="icon" href="http://localhost:61769/blog/2020/12/attach-a-keyboard-to-a-docker-container/">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
@@ -111,57 +111,57 @@ What is spotifyd? Spotifyd is a headless Spotify that can be remote controlled (
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&text=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&text=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&is_video=false&description=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&is_video=false&description=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd&body=Check out this article: http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f">
+    <a class="icon" href="mailto:?subject=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd&body=Check out this article: http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&name=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd&description=I%20wanted%20to%20get%20Spotifyd%20working%20in%20a%20Docker%20container.%20Turns%20out%2c%20audio%20and%20containers%20can%20be%20tricky.%20In%20this%20post%20I%26rsquo%3bll%20share%20what%20I%20learned%20on%20Linux%20audio%20subsystems%20and%20considerations%20on%20container%20audio.%0aIf%20all%20you%20want%20is%20to%20see%20%26ldquo%3bhow%20to%20get%20Spotifyd%20to%20work%20with%20Docker%26rdquo%3b%2c%20see%20the%20accompanying%20Spotifyd%20Docker%20image%20that%20I%20released.%0aWhat%20is%20spotifyd%3f%20Spotifyd%20is%20a%20headless%20Spotify%20that%20can%20be%20remote%20controlled%20%28%26ldquo%3bplay%20music%20on%20device%20X%26rdquo%3b%29%20from%20the%20Spotify%20desktop%20application%2c%20Spotify%20website%20and%20Spotify%20mobile%20apps.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&name=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd&description=I%20wanted%20to%20get%20Spotifyd%20working%20in%20a%20Docker%20container.%20Turns%20out%2c%20audio%20and%20containers%20can%20be%20tricky.%20In%20this%20post%20I%26rsquo%3bll%20share%20what%20I%20learned%20on%20Linux%20audio%20subsystems%20and%20considerations%20on%20container%20audio.%0aIf%20all%20you%20want%20is%20to%20see%20%26ldquo%3bhow%20to%20get%20Spotifyd%20to%20work%20with%20Docker%26rdquo%3b%2c%20see%20the%20accompanying%20Spotifyd%20Docker%20image%20that%20I%20released.%0aWhat%20is%20spotifyd%3f%20Spotifyd%20is%20a%20headless%20Spotify%20that%20can%20be%20remote%20controlled%20%28%26ldquo%3bplay%20music%20on%20device%20X%26rdquo%3b%29%20from%20the%20Spotify%20desktop%20application%2c%20Spotify%20website%20and%20Spotify%20mobile%20apps.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&t=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&t=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -508,57 +508,57 @@ var disqus_identifier = '\/blog\/2020\/12\/audio-in-docker-containers-linux-audi
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&text=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&text=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&is_video=false&description=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&is_video=false&description=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd&body=Check out this article: http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f">
+    <a class="icon" href="mailto:?subject=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd&body=Check out this article: http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&title=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&name=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd&description=I%20wanted%20to%20get%20Spotifyd%20working%20in%20a%20Docker%20container.%20Turns%20out%2c%20audio%20and%20containers%20can%20be%20tricky.%20In%20this%20post%20I%26rsquo%3bll%20share%20what%20I%20learned%20on%20Linux%20audio%20subsystems%20and%20considerations%20on%20container%20audio.%0aIf%20all%20you%20want%20is%20to%20see%20%26ldquo%3bhow%20to%20get%20Spotifyd%20to%20work%20with%20Docker%26rdquo%3b%2c%20see%20the%20accompanying%20Spotifyd%20Docker%20image%20that%20I%20released.%0aWhat%20is%20spotifyd%3f%20Spotifyd%20is%20a%20headless%20Spotify%20that%20can%20be%20remote%20controlled%20%28%26ldquo%3bplay%20music%20on%20device%20X%26rdquo%3b%29%20from%20the%20Spotify%20desktop%20application%2c%20Spotify%20website%20and%20Spotify%20mobile%20apps.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&name=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd&description=I%20wanted%20to%20get%20Spotifyd%20working%20in%20a%20Docker%20container.%20Turns%20out%2c%20audio%20and%20containers%20can%20be%20tricky.%20In%20this%20post%20I%26rsquo%3bll%20share%20what%20I%20learned%20on%20Linux%20audio%20subsystems%20and%20considerations%20on%20container%20audio.%0aIf%20all%20you%20want%20is%20to%20see%20%26ldquo%3bhow%20to%20get%20Spotifyd%20to%20work%20with%20Docker%26rdquo%3b%2c%20see%20the%20accompanying%20Spotifyd%20Docker%20image%20that%20I%20released.%0aWhat%20is%20spotifyd%3f%20Spotifyd%20is%20a%20headless%20Spotify%20that%20can%20be%20remote%20controlled%20%28%26ldquo%3bplay%20music%20on%20device%20X%26rdquo%3b%29%20from%20the%20Spotify%20desktop%20application%2c%20Spotify%20website%20and%20Spotify%20mobile%20apps.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a61622%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&t=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a61769%2fblog%2f2020%2f12%2faudio-in-docker-containers-linux-audio-subsystems-spotifyd%2f&t=Audio%20in%20Docker%20containers%2c%20Linux%20audio%20subsystems%2c%20Spotifyd">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
