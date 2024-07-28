@@ -13,6 +13,6 @@ hugo
 # disabled rednering it) feed with the blog-specific feed instead.
 #
 # https://www.refactoredtelegram.net/2020/12/posts-only-rss-feed-in-hugo/
-mv public/posts/index.xml public/index.xml
+mv public/posts/feed.xml public/feed.xml
 
 (cd public/ && tar -czf ../rel/site.tar.gz *)

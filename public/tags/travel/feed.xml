@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Travel on joonas.fi</title>
-    <link>http://localhost:63129/blog/tags/travel/</link>
+    <link>http://localhost:65095/blog/tags/travel/</link>
     <description>Recent content in Travel on joonas.fi</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Dec 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:63129/blog/tags/travel/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:65095/blog/tags/travel/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Project: visited destinations on a map</title>
-      <link>http://localhost:63129/blog/2015/12/28/project-visited-destinations-on-a-map/</link>
+      <link>http://localhost:65095/blog/2015/12/28/project-visited-destinations-on-a-map/</link>
       <pubDate>Tue, 29 Dec 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63129/blog/2015/12/28/project-visited-destinations-on-a-map/</guid>
+      <guid>http://localhost:65095/blog/2015/12/28/project-visited-destinations-on-a-map/</guid>
       <description>I love to travel, and have tried to visit at least a couple of destinations each year.&#xA;Yesterday for fun I prototyped an interactive map that shows the destinations I&amp;rsquo;ve been to:&#xA;It helps to have a tool with which you can pan+zoom and visually see the places you have yet to visit.</description>
     </item>
   </channel>
