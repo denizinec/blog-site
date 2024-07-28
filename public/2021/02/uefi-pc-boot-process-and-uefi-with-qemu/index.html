@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=61769&amp;path=blog/livereload" data-no-instant defer></script>
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=62645&amp;path=blog/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> UEFI, PC boot process and UEFI with QEMU | joonas.fi</title>
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:url" content="http://localhost:61769/blog/2021/02/uefi-pc-boot-process-and-uefi-with-qemu/">
+  <meta property="og:url" content="http://localhost:62645/blog/2021/02/uefi-pc-boot-process-and-uefi-with-qemu/">
   <meta property="og:site_name" content="joonas.fi">
   <meta property="og:title" content="UEFI, PC boot process and UEFI with QEMU">
   <meta property="og:description" content="Recently I learned a lot more about UEFI/BIOS than I would’ve liked to, when I was configuring my new exotic system’s boot process. It just goes to show you that when you step away from the well-traveled path, you’re going to run into stupid problems and have to understand deeper about how things work. So I’m sharing what I learned.
@@ -70,14 +70,14 @@ Legacy BIOS To better understand UEFI, we must first dig into a little bit of hi
       <ul>
         
         <li>
-          <a class="icon" href=" http://localhost:61769/blog/2021/02/reverse-engineering-midi-devices-akai-mpk-mini-mk3/">
+          <a class="icon" href=" http://localhost:62645/blog/2021/02/reverse-engineering-midi-devices-akai-mpk-mini-mk3/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="http://localhost:61769/blog/2021/02/blog-facelift-technical-renovation/">
+          <a class="icon" href="http://localhost:62645/blog/2021/02/blog-facelift-technical-renovation/">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
@@ -108,57 +108,57 @@ Legacy BIOS To better understand UEFI, we must first dig into a little bit of hi
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&text=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&text=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&is_video=false&description=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&is_video=false&description=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU&body=Check out this article: http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f">
+    <a class="icon" href="mailto:?subject=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU&body=Check out this article: http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&name=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU&description=Recently%20I%20learned%20a%20lot%20more%20about%20UEFI%2fBIOS%20than%20I%20would%26rsquo%3bve%20liked%20to%2c%20when%20I%20was%20configuring%20my%20new%20exotic%20system%26rsquo%3bs%20boot%20process.%20It%20just%20goes%20to%20show%20you%20that%20when%20you%20step%20away%20from%20the%20well-traveled%20path%2c%20you%26rsquo%3bre%20going%20to%20run%20into%20stupid%20problems%20and%20have%20to%20understand%20deeper%20about%20how%20things%20work.%20So%20I%26rsquo%3bm%20sharing%20what%20I%20learned.%0aLegacy%20BIOS%20To%20better%20understand%20UEFI%2c%20we%20must%20first%20dig%20into%20a%20little%20bit%20of%20history.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&name=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU&description=Recently%20I%20learned%20a%20lot%20more%20about%20UEFI%2fBIOS%20than%20I%20would%26rsquo%3bve%20liked%20to%2c%20when%20I%20was%20configuring%20my%20new%20exotic%20system%26rsquo%3bs%20boot%20process.%20It%20just%20goes%20to%20show%20you%20that%20when%20you%20step%20away%20from%20the%20well-traveled%20path%2c%20you%26rsquo%3bre%20going%20to%20run%20into%20stupid%20problems%20and%20have%20to%20understand%20deeper%20about%20how%20things%20work.%20So%20I%26rsquo%3bm%20sharing%20what%20I%20learned.%0aLegacy%20BIOS%20To%20better%20understand%20UEFI%2c%20we%20must%20first%20dig%20into%20a%20little%20bit%20of%20history.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&t=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&t=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -690,57 +690,57 @@ var disqus_identifier = '\/blog\/2021\/02\/uefi-pc-boot-process-and-uefi-with-qe
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&text=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&text=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&is_video=false&description=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&is_video=false&description=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU&body=Check out this article: http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f">
+    <a class="icon" href="mailto:?subject=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU&body=Check out this article: http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&title=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&name=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU&description=Recently%20I%20learned%20a%20lot%20more%20about%20UEFI%2fBIOS%20than%20I%20would%26rsquo%3bve%20liked%20to%2c%20when%20I%20was%20configuring%20my%20new%20exotic%20system%26rsquo%3bs%20boot%20process.%20It%20just%20goes%20to%20show%20you%20that%20when%20you%20step%20away%20from%20the%20well-traveled%20path%2c%20you%26rsquo%3bre%20going%20to%20run%20into%20stupid%20problems%20and%20have%20to%20understand%20deeper%20about%20how%20things%20work.%20So%20I%26rsquo%3bm%20sharing%20what%20I%20learned.%0aLegacy%20BIOS%20To%20better%20understand%20UEFI%2c%20we%20must%20first%20dig%20into%20a%20little%20bit%20of%20history.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&name=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU&description=Recently%20I%20learned%20a%20lot%20more%20about%20UEFI%2fBIOS%20than%20I%20would%26rsquo%3bve%20liked%20to%2c%20when%20I%20was%20configuring%20my%20new%20exotic%20system%26rsquo%3bs%20boot%20process.%20It%20just%20goes%20to%20show%20you%20that%20when%20you%20step%20away%20from%20the%20well-traveled%20path%2c%20you%26rsquo%3bre%20going%20to%20run%20into%20stupid%20problems%20and%20have%20to%20understand%20deeper%20about%20how%20things%20work.%20So%20I%26rsquo%3bm%20sharing%20what%20I%20learned.%0aLegacy%20BIOS%20To%20better%20understand%20UEFI%2c%20we%20must%20first%20dig%20into%20a%20little%20bit%20of%20history.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a61769%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&t=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a62645%2fblog%2f2021%2f02%2fuefi-pc-boot-process-and-uefi-with-qemu%2f&t=UEFI%2c%20PC%20boot%20process%20and%20UEFI%20with%20QEMU">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
