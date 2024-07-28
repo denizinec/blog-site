@@ -37,7 +37,7 @@ css = [ "css/custom.css" ]
 
   [[params.social]]
   name = "rss"
-  link = "/index.xml"
+  link = "/feed.xml"
 
 [[menu.main]]
 name = "Home"
@@ -45,8 +45,8 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Today I Learned"
-url = "/today-i-learned/"
+name = "WHAM!"
+url = "/wham"
 weight = 2
 
 [[menu.main]]
