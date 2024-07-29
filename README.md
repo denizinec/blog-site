@@ -2,7 +2,7 @@
 
 ![Build](https://github.com/joonas-fi/joonas.fi/workflows/Build/badge.svg)
 
-What
+
 ====
 
 This is source code for my [personal blog](https://joonas.fi/), powered by [Hugo](https://gohugo.io/).
